@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/BeiSen_Practice/',
+  // GitHub Pages 部署路径，需与仓库名保持一致；本地开发请用 npm run dev -- --base=/
+  base: '/BeiSen_Practice-BeiSenCePing/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

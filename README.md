@@ -4,6 +4,8 @@
 
 **在线体验（无需安装，直接开）：** https://beisen-practice.app.workbuddy.host/
 
+**仓库地址：** https://github.com/ruixinji/BeiSen_Practice-BeiSenCePing
+
 ---
 
 ## 功能特性
@@ -29,7 +31,8 @@
 npm install
 
 # 启动开发服务器 → http://localhost:5173
-npm run dev
+# （base 默认给 GitHub Pages 用，本地开发需覆盖，否则资源 404）
+npm run dev -- --base=/
 
 # 构建生产版本（产物在 dist/）
 npm run build
@@ -54,7 +57,7 @@ npm run preview
 
 ## 部署到 GitHub Pages
 
-`vite.config.js` 中的 `base` 已设为 `/BeiSen_Practice/`，与仓库名一致，因此**直接构建即可部署到 Pages**：
+`vite.config.js` 中的 `base` 已设为 `/BeiSen_Practice-BeiSenCePing/`，与仓库名一致，因此**直接构建即可部署到 Pages**：
 
 ```bash
 npm run build
@@ -72,6 +75,8 @@ npm run build -- --base=/my-path/
 ```
 
 > 本项目线上的那份就是按 `--base=./` 构建的。
+
+> 注：GitHub 仓库名不支持中文（中文会被替换成连字符），因此仓库名用了拼音 `BeiSenCePing`；仓库描述与 README 中保留中文「北森测评」。
 
 ## 项目结构
 
